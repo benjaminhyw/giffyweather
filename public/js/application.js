@@ -2,11 +2,8 @@ $(document).ready(function(){
 
   $("a").on("click", function(event){
     event.preventDefault();
-    // $("#forecast-container").html(event.result)
-
     var temp = $("#forecast-container").html()
-
-
+    
     if ( _.range(100,150).includes(parseInt(temp))) {
       $("body").removeClass()
       $("body").addClass("volcano")
@@ -39,10 +36,4 @@ $(document).ready(function(){
       $("body").addClass("freezing")
     }
   })
-
-
-  // console.log($("#forecast-container").html())
- 
-
-
 });
