@@ -1,0 +1,23 @@
+<div id="form-container">
+</div>
+<% if @user %>
+  Welcome, <%= @user.first_name %>!
+<% end %>
+
+<form method="post" action='/'>
+  City: <input type='location' name='location'><br>
+  <input type='submit' value='Submit'>
+</form>
+
+
+<% week_forecast = [] %>
+<% if @location %>
+  <% @alerts.each do |day| %>
+     <% week_forecast << day.high.fahrenheit %>
+     <% week_forecast << day.low.fahrenheit %>
+  <% end %>
+  <% @highest = week_forecast.sort().last %>
+  <% @lowest = week_forecast.sort().first %>
+  <%= @highest %>
+  <%= @lowest %>
+<% end %>
