@@ -28,7 +28,7 @@ body.this_is_fine {
 }
 
 body.beach {
-  color: red;
+  color: blue;
   background-image: url("https://media.giphy.com/media/FjJMYGHJEBmlq/giphy.gif");
   background-repeat: no-repeat;
   background-size:cover;
