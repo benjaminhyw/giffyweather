@@ -1,3 +1,11 @@
+body.home {
+  color: white;
+  background-image: url("https://media.giphy.com/media/PLJzdMVafDLTW/giphy.gif");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+
 body.volcano {
   color: white;
   background-image: url("https://media.giphy.com/media/12EmEbyOdsyIMw/giphy.gif");
@@ -6,7 +14,7 @@ body.volcano {
 }
 
 body.on_fire {
-  color: black;
+  color: white;
   background-image: url("https://media.giphy.com/media/xT4uQlYKYFqhB93EWY/giphy.gif");
   background-repeat: no-repeat;
   background-size:cover;
@@ -20,7 +28,7 @@ body.this_is_fine {
 }
 
 body.beach {
-  color: white;
+  color: red;
   background-image: url("https://media.giphy.com/media/FjJMYGHJEBmlq/giphy.gif");
   background-repeat: no-repeat;
   background-size:cover;
@@ -34,7 +42,7 @@ body.overcast {
 }
 
 body.sweater_weather {
-  color: black;
+  color: white;
   background-image: url("https://media.giphy.com/media/kPak0CH7R6Cmk/giphy.gif");
   background-repeat: no-repeat;
   background-size:cover;
