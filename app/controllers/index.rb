@@ -5,6 +5,13 @@ end
 
 post '/' do
   # if request.xhr?
+  
+  # w_api = Wunderground.new
+
+  # w_api.[date.hour]_for('params[:location]')
+
+
+
     @location = params[:location]
     w = WeatherUnderground::Base.new
     @alerts = w.SimpleForecast(@location).days
