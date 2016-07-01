@@ -3,22 +3,20 @@ get '/' do
   erb :index
 end
 
-get '/weather' do
-  @data = json_info
-  erb :weather
-end
-
 post '/' do
-  @location = params[:location]
-  w = WeatherUnderground::Base.new
-  @alerts = w.SimpleForecast(@location).days
-  @alerts.each do |day|
-    p day.high.fahrenheit
-  end
-
-  # @alerts = w.CurrentObservations( zip )
-  # p @alerts
-
+  # if request.xhr?
+    @location = params[:location]
+    w = WeatherUnderground::Base.new
+    @alerts = w.SimpleForecast(@location).days
+    @alerts.each do |day|
+      p day.high.fahrenheit
+    end
   erb :index
 end
 
+get '/weather' do
+  @data = json_info
+  if request.xhr?
+    erb :weather, layout: false, locals: {data: data}
+  end
+end

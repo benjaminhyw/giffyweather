@@ -4,20 +4,22 @@
   Welcome, <%= @user.first_name %>!
 <% end %>
 
-<form method="post" action='/'>
+<form id="location-form"method="post" action='/'>
   City: <input type='location' name='location'><br>
   <input type='submit' value='Submit'>
 </form>
 
-
-<% week_forecast = [] %>
-<% if @location %>
-  <% @alerts.each do |day| %>
-     <% week_forecast << day.high.fahrenheit %>
-     <% week_forecast << day.low.fahrenheit %>
+<div id="forecast-container">
+  <% week_forecast = [] %>
+  <% if @location %>
+    <% @alerts.each do |day| %>
+       <% week_forecast << day.high.fahrenheit %>
+       <% week_forecast << day.low.fahrenheit %>
+    <% end %>
+    <% @highest = week_forecast.sort().last %>
+    <% @lowest = week_forecast.sort().first %>
+     <%= @highest %>
   <% end %>
-  <% @highest = week_forecast.sort().last %>
-  <% @lowest = week_forecast.sort().first %>
-  <%= @highest %>
-  <%= @lowest %>
-<% end %>
+  <a href="">Let's see!</a>
+  
+</div>

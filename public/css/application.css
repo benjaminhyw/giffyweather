@@ -1,0 +1,77 @@
+body.home {
+  color: white;
+  background-image: url("https://media.giphy.com/media/PLJzdMVafDLTW/giphy.gif");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+
+body.volcano {
+  color: white;
+  background-image: url("https://media.giphy.com/media/12EmEbyOdsyIMw/giphy.gif");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+body.on_fire {
+  color: white;
+  background-image: url("https://media.giphy.com/media/xT4uQlYKYFqhB93EWY/giphy.gif");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+body.this_is_fine {
+  color: white;
+  background-image: url("https://media.giphy.com/media/3o6UBpHgaXFDNAuttm/giphy.gif");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+body.beach {
+  color: blue;
+  background-image: url("https://media.giphy.com/media/FjJMYGHJEBmlq/giphy.gif");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+body.overcast {
+  color: white;
+  background-image: url("https://media.giphy.com/media/3o7rc6sa2RvKo8K5EI/giphy.gif");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+body.sweater_weather {
+  color: white;
+  background-image: url("https://media.giphy.com/media/kPak0CH7R6Cmk/giphy.gif");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+body.cold {
+  color: white;
+  background-image: url("https://media.giphy.com/media/5XoYZSLEsQcZG/giphy.gif");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+body.light_snow {
+  color: white;
+  background-image: url("https://media.giphy.com/media/DWkSNMNRSeUeI/giphy.gif");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+body.avalanche {
+  color: white;
+  background-image: url("https://media.giphy.com/media/l5GAHVP550WFW/giphy.gif");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+body.freezing {
+  color: white;
+  background-image: url("https://media.giphy.com/media/12uG2HiccoRkm4/giphy.gif");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
