@@ -9,9 +9,6 @@
   <input type='submit' value='Submit'>
 </form>
 
-
-<a href="">Let's see!</a>
-
 <div id="forecast-container">
   <% week_forecast = [] %>
   <% if @location %>
@@ -22,9 +19,7 @@
     <% @highest = week_forecast.sort().last %>
     <% @lowest = week_forecast.sort().first %>
      <%= @highest %>
-
-      <a href="">Let's see!</a>
-
   <% end %>
+  <a href="">Let's see!</a>
   
 </div>
