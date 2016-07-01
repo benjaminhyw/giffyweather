@@ -9,17 +9,22 @@
   <input type='submit' value='Submit'>
 </form>
 
+
+<a href="">Let's see!</a>
+
 <div id="forecast-container">
-  72
-</div>
-<% week_forecast = [] %>
-<% if @location %>
-  <% @alerts.each do |day| %>
-     <% week_forecast << day.high.fahrenheit %>
-     <% week_forecast << day.low.fahrenheit %>
+  <% week_forecast = [] %>
+  <% if @location %>
+    <% @alerts.each do |day| %>
+       <% week_forecast << day.high.fahrenheit %>
+       <% week_forecast << day.low.fahrenheit %>
+    <% end %>
+    <% @highest = week_forecast.sort().last %>
+    <% @lowest = week_forecast.sort().first %>
+     <%= @highest %>
+
+      <a href="">Let's see!</a>
+
   <% end %>
-  <% @highest = week_forecast.sort().last %>
-  <% @lowest = week_forecast.sort().first %>
-  <%= @highest %>
-  <%= @lowest %>
-<% end %>
+  
+</div>
