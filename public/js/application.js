@@ -12,7 +12,7 @@ $(document).ready(function(){
       $("body").addClass("volcano")
     } else if ( _.range(90,100).includes(parseInt(temp))){
       $("body").removeClass()
-      $("body").addClass("on_fire")
+      $("body").addClass("forest_fire")
     } else if ( _.range(80,90).includes(parseInt(temp))){
       $("body").removeClass()
       $("body").addClass("this_is_fine")
