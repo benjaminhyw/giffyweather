@@ -13,9 +13,9 @@ body.volcano {
   background-size:cover;
 }
 
-body.on_fire {
+body.forest_fire {
   color: white;
-  background-image: url("https://media.giphy.com/media/xT4uQlYKYFqhB93EWY/giphy.gif");
+  background-image: url("https://media.giphy.com/media/137jjupPEWhG00/giphy.gif");
   background-repeat: no-repeat;
   background-size:cover;
 }

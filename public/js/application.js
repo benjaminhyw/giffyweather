@@ -2,17 +2,14 @@ $(document).ready(function(){
 
   $("a").on("click", function(event){
     event.preventDefault();
-    // $("#forecast-container").html(event.result)
-
     var temp = $("#forecast-container").html()
-
-
+    
     if ( _.range(100,150).includes(parseInt(temp))) {
       $("body").removeClass()
       $("body").addClass("volcano")
     } else if ( _.range(90,100).includes(parseInt(temp))){
       $("body").removeClass()
-      $("body").addClass("on_fire")
+      $("body").addClass("forest_fire")
     } else if ( _.range(80,90).includes(parseInt(temp))){
       $("body").removeClass()
       $("body").addClass("this_is_fine")
@@ -39,10 +36,4 @@ $(document).ready(function(){
       $("body").addClass("freezing")
     }
   })
-
-
-  // console.log($("#forecast-container").html())
- 
-
-
 });

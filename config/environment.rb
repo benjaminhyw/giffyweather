@@ -23,7 +23,7 @@ require 'logger'
 require 'sinatra'
 require "sinatra/reloader" if development?
 require 'bcrypt'
-require 'faker'
+# require 'faker'
 
 require 'erb'
 
