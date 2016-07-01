@@ -4,8 +4,18 @@ $(document).ready(function(){
     event.preventDefault();
     $(this).hide('slow')
 
-    $("#forecast-container").empty()
-    $("#forecast-container").html("howdy")
+    var temp = $("#forecast-container").html()
+    console.log(temp)
+
+    if ( _.range(90,150).includes(parseInt(temp))) {
+      $("body").removeClass()
+      $("body").addClass("volcano")
+
+      console.log("kinda but not really working")
+    }
+
+    // $("#forecast-container").empty()
+    // $("#forecast-container").html("howdy")
   })
 
 
